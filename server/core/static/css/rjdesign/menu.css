@@ -1,0 +1,215 @@
+/* menu.css file - RJdesign */
+.breadcrumbs {
+    color: #333;
+    border: 0px solid #800;
+}
+
+.top-menu {
+    padding: 10px;
+    margin: 0px;
+    border: 0px solid blue;
+    color: #333;
+    font-size: 1.0em;
+    display: flex;
+    background: #fff;
+}
+
+.top-menu-2 {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.menu-btn {
+    padding: 0px;
+    font-size: 2.0em;
+    background-color: #fff;
+    color: #666;
+    border: none;
+    cursor: pointer;
+}
+.menu-btn:hover {
+	background: #fff;
+	color: #4682b4;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    min-width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    list-style: none;
+    text-align: left;
+}
+
+ul.menu-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-content a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: underline;
+    color: #4682b4;
+    white-space: nowrap;
+}
+.menu-content a:hover {
+    color: #87cefa;
+    text-decoration: underline;
+}
+/* klíčová část */
+.top-menu-2:hover .menu-content {
+    display: block;
+}
+
+.bottom-menu {
+    padding: 1px 0 0 0;
+    margin: 0px;
+    border: 0px solid blue;
+    color: #333;
+    font-size: 0.9em;
+    display: flex;
+    background: #fff;
+}
+
+.bottom-menu-2 {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.bottom-menu-btn {
+    padding: 0px;
+    font-size: 1.0em;
+    background-color: #fff;
+    color: #666;
+    border: none;
+    cursor: pointer;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.bottom-menu-btn:hover {
+	background: #fff;
+	color: #4682b4;
+}
+.bottom-menu-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 11;
+    min-width: 220px;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    background-color: #ebfbfb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    list-style: none;
+    text-align: left;
+}
+
+.bottom-menu-content a {
+    display: inline;
+    text-decoration: none;
+    color: #4682b4;
+    white-space: nowrap;
+}
+.bottom-menu-content a:hover {
+    color: #4682b4;
+    text-decoration: underline;
+}
+/* klíčová část */
+.bottom-menu-2:hover .bottom-menu-content {
+    display: block;
+}
+
+/* <<< ready line >>> */
+
+/* menu line */
+.line-menu-line {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid #999;
+      }
+
+.line-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fff;
+  display: flex;
+}
+.line-menu li {
+  border: 0px solid blue;
+  letter-spacing: 1px;
+}
+
+.line-menu a {
+  display: block;
+  color: #999;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: lowercase;
+  padding: 6px 32px 2px 12px;
+  font-size: 1.2em;
+  border: 0 solid red;
+  border-bottom: 0 solid #999;
+}
+.line-menu a:hover {
+  color: #4682b4;
+  text-decoration: none;
+  border-bottom: 0 solid #4682b4;
+}
+
+/* Rodič položky s rozbalovacím menu */
+.line-menu-dropdown {
+    position: relative;
+}
+
+/* Skryté podmenu */
+.line-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+
+    min-width: 180px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Zobrazení myší i klávesnicí */
+.line-menu-dropdown:hover .line-submenu,
+.line-menu-dropdown:focus-within .line-submenu {
+    display: block;
+}
+
+/* Odkazy v podmenu */
+.line-menu .line-submenu a {
+    padding: 8px 12px;
+    color: #999;
+    font-size: 1em;
+    font-weight: bold;
+    white-space: nowrap;
+    text-transform: none;
+}
+
+.line-menu .line-submenu a:hover,
+.line-menu .line-submenu a:focus {
+    color: #4682b4;
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,24 @@
+Create Django
+
+cd D:\60-projects\Gdisk\COLA-CodersLab\ONL_PYT_W_6358\projects\cola_project_50_django
+
+pyCharm / Terminal:
+
+django-admin startproject server
+
+cd server
+
+python3 manage.py migrate
+python3 manage.py createsuperuser
+python3 manage.py startapp books
+
+-- vytvoreni aplikace books
+python3 manage.py startapp books
+python3 manage.py startapp core
+
+ python3 manage.py migrate
+
+edit: settings.py / add to INSTALLED_APPS = [ ... , 'books',]
+
+python3 manage.py runserver 0.0.0.0:8100
+

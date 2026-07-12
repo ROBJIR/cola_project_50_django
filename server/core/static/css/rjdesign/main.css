@@ -1,0 +1,106 @@
+/* main.css file - RJdesign */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	/* Base styles go here */
+	font-family: Calibri, Verdana, Arial, sans-serif;
+	font-size: 1em;
+	background: #fff;
+	color: #333;
+	width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+	background: #fff;
+	color: #333;
+	border: 0 solid #333;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0;
+	min-height: 100vh;
+    flex-direction: column;
+	justify-content: center;  /* horizontálně */
+	align-items: center;      /* vertikálně */
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	border: 0 solid #008;
+	padding: 20px;
+	flex: 1;
+	box-sizing: border-box;
+}
+
+a {
+	color: #333;              /* barva odkazu */
+	text-decoration: none;    /* odstraní podtržení */
+}
+a:link {
+	color: #333;              /* normální (nenavštívený) odkaz */
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #333;            /* již navštívený odkaz */
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #4682b4;               /* když na něj najedeš myší */
+	text-decoration: none;
+}
+
+a:active {
+	color: #333;             /* při kliknutí */
+}
+
+h1 {
+	font-size: 3.8em;
+	border: 0 solid #666;
+	color: #87cefa;
+	font-weight: bold;
+	text-transform: lowercase;
+	margin: 0;
+	padding: 10px 0 0 5px;
+}
+
+h2 {
+	font-size: 1.6em;
+	border: 0 solid #666;
+	color: #4682b4;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+header {
+	border: 0 solid red;
+	padding: 0;
+	color: #333;
+	font-size: 1.0em;
+	display: flex;
+	justify-content: center;
+}
+
+footer {
+	padding: 5px 10px 10px 10px;
+	margin: 0;
+    border-top:    1px solid #666;
+    border-right:  0;
+    border-bottom: 0;
+    border-left:   0;
+	color: #333;
+	font-size: 0.8em;
+	display: flex;
+	justify-content: center;  /* horizontálně */
+}
