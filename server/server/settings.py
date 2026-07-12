@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'calculator',
+    'imdb',
+    'shark',
     'books',
 ]
 
@@ -117,3 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# RJIR settings
+
+# nastavi na koncec url vzdy slash - potom path ukoncovat vzdy / (krome root :-))
+APPEND_SLASH = True

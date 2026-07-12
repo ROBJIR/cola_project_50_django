@@ -16,9 +16,10 @@ python3 manage.py startapp books
 python3 manage.py startapp books
 python3 manage.py startapp core
 
- python3 manage.py migrate
+python3 manage.py makemigrations
+python3 manage.py migrate
 
 edit: settings.py / add to INSTALLED_APPS = [ ... , 'books',]
 
-python3 manage.py runserver 0.0.0.0:8100
+python3 manage.py runserver 0.0.0.0:8000
 

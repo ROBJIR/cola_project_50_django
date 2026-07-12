@@ -70,7 +70,7 @@ h1 {
 	font-weight: bold;
 	text-transform: lowercase;
 	margin: 0;
-	padding: 10px 0 0 5px;
+	padding: 0 0 20px 5px;
 }
 
 h2 {
@@ -80,7 +80,7 @@ h2 {
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 0;
-	padding: 10px 0 0 0;
+	padding: 10px 0 20px 0;
 }
 
 header {

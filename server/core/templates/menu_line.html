@@ -2,12 +2,20 @@
     <ul class="line-menu">
         <li><a href="{% url 'home' %}">Home</a></li>
         <li class="line-menu-dropdown">
-            <a href="#">Projects</a>
+            <a href="#">Django Basic</a>
 
             <ul class="line-submenu">
-                <li><a href="#">project1</a></li>
-                <li><a href="#">project2</a></li>
-                <li><a href="#">project3</a></li>
+                <li><a href="{% url 'calculator' %}">calculator</a></li>
+            </ul>
+        </li>
+
+                <li class="line-menu-dropdown">
+            <a href="#">IMDB</a>
+
+            <ul class="line-submenu">
+                <li><a href="{% url 'genre' %}">genres</a></li>
+                <li><a href="{% url 'person' %}">persons</a></li>
+                <li><a href="{% url 'movie' %}">movies</a></li>
             </ul>
         </li>
 
