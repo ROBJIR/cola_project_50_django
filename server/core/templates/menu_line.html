@@ -10,12 +10,12 @@
         </li>
 
                 <li class="line-menu-dropdown">
-            <a href="#">IMDB</a>
+            <a href="{% url 'imdb' %}">IMDB</a>
 
             <ul class="line-submenu">
-                <li><a href="{% url 'genre' %}">genres</a></li>
-                <li><a href="{% url 'person' %}">persons</a></li>
                 <li><a href="{% url 'movie' %}">movies</a></li>
+                <li><a href="{% url 'person' %}">persons</a></li>
+                <li><a href="{% url 'genre' %}">genres</a></li>
             </ul>
         </li>
 

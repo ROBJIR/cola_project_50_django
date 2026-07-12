@@ -6,17 +6,23 @@ from .models import Genre, Person, Movie
 # Create your views here.
 
 def imdb(request):
-    return render(request, 'rjdesign.html',{"web_name":"robertjiranek.eu","page_name":"imdb","page_body":"" })
+    html_body = ''
+    html_body = f'{html_body}<a href="movie">movies</a> | \n'
+    html_body = f'{html_body}<a href="person">persons</a> | \n'
+    html_body = f'{html_body}<a href="genre">genres</a>\n'
+    html_body = f'<div>{html_body}</div>\n'
+
+    return render(request, 'rjdesign.html',{"web_name":"robertjiranek.eu","page_name":"imdb","page_body":html_body })
 
 def genre(request):
     genres = Genre.objects.all().order_by('name')
-    countofrows = length(genres)
+    countrows = length(genres)
     html_body = ""
     for genre in genres:
-        countofmovies = length(Genre.objects.get(id=id))
-        html_body += f"<tr><td><small><i>{genre.pk}</i></small></td><td> {genre.name}</td><td>{countofmovies}</td></tr>\n"
+        countmovies = length(Genre.objects.get(id=genre.pk))
+        html_body += f"<tr><td><small><i>{genre.pk}</i></small></td><td> {genre.name}</td><td>{countmovies}</td></tr>\n"
     html_body = f"<table>\n<tr><th>id</th><th>name</th><th>count movies</th></tr>\n{html_body}\n</table>\n"
-    html_body = f"<div>rows: {countofrows}</div>\n"
+    html_body = f"{html_body}\n<div><small>rows: {countrows}</small></div>\n"
 
     return render(request, 'rjdesign.html',{"web_name":"robertjiranek.eu","page_name":"genres","page_body":html_body})
 
